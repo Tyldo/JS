@@ -16,7 +16,7 @@ setInterval(function(){
 	arrOfPosts.forEach(function(item){ 
 		var text = item.text; 
 		if(!sendedMessages.includes(text)){ 
-			vk.request('messages.send',{'user_id':171561140,'message':text+'\n'+separator}) 
+			vk.request('messages.send',{'user_id':/*your ID*/,'message':text+'\n'+separator}) 
 			sendedMessages.push(text); 
 		} 
 	}) 
